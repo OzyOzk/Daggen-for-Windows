@@ -28,8 +28,12 @@ fopen has been deprecated by Microsoft. Once you add _CRT_SECURE_NO_WARNINGS to 
 
 Once compiled, daggen can be used by navigating your command window to where daggen.exe is located and carrying out the following command;
 
-`daggen.exe daggen_test.exe -n 10 `
-
+`daggen.exe -n 10 `
+ 
+ The .exe name will be whatever you called your Visual studio project. If you called it daggen_win the you will run the following command;
+ 
+ `daggen_win.exe -n 10 `
+ 
 ## Future Work
 
  - Replace ctime
