@@ -1,5 +1,5 @@
 # Daggen-for-Windows
-A basic port of Daggen for Windows machines
+A basic port of Daggen for Windows machines. Link to original repository [here.](https://github.com/frs69wq/daggen)
 
 ## Requirements
 
@@ -20,11 +20,11 @@ Compile in Release mode for x64 platforms.
 
 I replaced fopen and ctime with fopen_s and ctime_s respectively. You no longer need to add _CRT_SECURE_NO_WARNINGS to your preprocessor definitions.
 
-~~Daggen uses ctime and fopen. ctime takes a time_t reference as it's argument. For large values of time_t it can cause undefined behaviour. From the ctime description;
+~~Daggen uses ctime and fopen. ctime takes a time_t reference as it's argument. For large values of time_t it can cause undefined behaviour. From the ctime description;~~
 
 > This function returns a pointer to static data and is not thread-safe. In addition, it modifies the static tm object which may be shared with gmtime and localtime. POSIX marks this function obsolete and recommends strftime instead. The behavior may be undefined for the values of time_t that result in the string longer than 25 characters (e.g. year 10000)
 
-fopen has been deprecated by Microsoft. Once you add _CRT_SECURE_NO_WARNINGS to your preprocessor definitions you should be fine.
+fopen has been deprecated by Microsoft.
 
 ## usage
 
