@@ -241,7 +241,8 @@ int parseOptions(int argc, char* const* argv) {
             oflag = 1;
 
             const char* filename = optarg;
-            if ((global.output_file = fopen(filename, "w")) == NULL) {
+
+            if (fopen_s(global.output_file, filename, "W") != 0) {
                 fprintf(stderr, "Error: Cannot open file '%s' for output\n", filename);
                 ret_val = -1;
             }
