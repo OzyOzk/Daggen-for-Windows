@@ -38,5 +38,5 @@ Once compiled, daggen can be used by navigating your command window to where dag
  
 ## Future Work
 
- - Replace ctime
- - Replace fopen
+ - ~~Replace ctime~~
+ - ~~Replace fopen~~
